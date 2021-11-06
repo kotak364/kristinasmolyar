@@ -247,4 +247,11 @@ header {
     align-items: center;
     line-height: 25px;
   }
+  .video-section-container video {
+    height: 60%;
+    object-fit: fill;
+  }
+  .video-section-heading {
+    top: 25%;
+  }
 }
