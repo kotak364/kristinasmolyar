@@ -250,4 +250,7 @@ header {
   .video-section-container {
     height: 80vh;
   }
+  .video-section-heading {
+    top: 40%;
+  }
 }
