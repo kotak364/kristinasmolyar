@@ -247,9 +247,8 @@ header {
     align-items: center;
     line-height: 25px;
   }
-  .video-section-container video {
-    height: 60%;
-    object-fit: fill;
+  .video-section-container {
+    height: 90vh;
   }
   .video-section-heading {
     top: 25%;
