@@ -253,4 +253,7 @@ header {
   .video-section-heading {
     top: 40%;
   }
+  .video-section-heading img {
+    padding: 20px 0px;
+  }
 }
