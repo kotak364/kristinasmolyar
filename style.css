@@ -66,17 +66,7 @@ header {
   align-items: center;
   width: 75%;
 }
-.header-container .logo {
-  position: relative;
-}
-.header-container .logo::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color:transparent;
-  z-index: 2;
-}
+
 .header-container svg:hover {
   transform: scale(1.1);
 }
