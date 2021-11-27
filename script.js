@@ -63,7 +63,7 @@ $(window).scroll(function () {
     var scrolledY = $(window).scrollTop();
     $(".box-section").css(
       "background-position",
-      "center " + (scrolledY * 0.6 - 200) + "px"
+      "center " + (scrolledY * 0.6 - 300) + "px"
     );
   }
 });
