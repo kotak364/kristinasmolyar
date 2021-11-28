@@ -58,26 +58,7 @@ function carousel() {
   });
 }
 
-$(window).scroll(function () {
-  if ($(window).width() <= 768) {
-    var scrolledY = $(window).scrollTop();
-    $(".box-section").css(
-      "background-position",
-      "center " + (scrolledY * 0.6 - 300) + "px"
-    );
-  }
-});
 
-$(window).scroll(function () {
-  if ($(window).width() > 768) {
-    var scrolledY = $(window).scrollTop();
-    console.log(scrolledY);
-    $(".box-section").css(
-      "background-position",
-      "center " + (scrolledY * 0.6 - 450) + "px"
-    );
-  }
-});
 
 // $(window).scroll(function () {
 //   var scrolledY = $(window).scrollTop();
