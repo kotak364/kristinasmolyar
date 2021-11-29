@@ -58,4 +58,28 @@ function carousel() {
   });
 }
 
+//image light box
+const lightbox = document.createElement("div");
+const image_lightbox_container = document.querySelector(
+  ".image-lightbox-container"
+);
+lightbox.id = "light-box-main-image";
+image_lightbox_container.appendChild(lightbox);
+const lightbox_images = document.querySelectorAll(".light-box-images > img");
 
+lightbox_images.forEach((image) => {
+  image.addEventListener("click", function (e) {
+    lightbox.classList.add("active");
+    const img = document.createElement("img");
+    img.src = e.target.src;
+    while (lightbox.firstChild) {
+      lightbox.removeChild(lightbox.firstChild);
+    }
+    lightbox.appendChild(img);
+  });
+});
+
+lightbox.addEventListener("click", (e) => {
+  if (e.target !== e.currentTarget) return;
+  lightbox.classList.remove("active");
+});

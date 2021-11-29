@@ -412,7 +412,8 @@ header {
 .mobile-image,
 .mobile-image-gallery,
 .mobile-image-container,
-.mobile-heading-container {
+.mobile-heading-container,
+.image-lightbox-container {
   display: none;
 }
 /* responsive  design */
@@ -501,7 +502,8 @@ header {
   .mobile-image,
   .mobile-image-gallery,
   .mobile-image-container,
-  .mobile-heading-container {
+  .mobile-heading-container,
+  .image-lightbox-container {
     display: block;
   }
   .mobile-image img {
@@ -517,7 +519,7 @@ header {
     padding-top: 50px;
   }
   .image-heading-section {
-    padding: 100px 0px 0px 0px;
+    padding: 50px 0px 0px 0px;
     margin: 0px;
   }
   .heading-paragraph-container {
@@ -561,11 +563,48 @@ header {
   }
   .image-heading-section,
   .heading-section,
-  .contact-us-section {
+  .contact-us-section,
+  .image-lightbox-container {
     background-color: #fff;
   }
   .mobile-image-heading-container {
     margin-top: 50px;
     width: 100%;
+  }
+  .heading-paragraph-container h1 {
+    padding-bottom: 30px;
+  }
+  .image-lightbox-container {
+    position: relative;
+  }
+  .light-box-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-gap: 20px;
+    padding: 10px 5px;
+  }
+  .light-box-images img {
+    width: 200px;
+    height: 200px;
+    justify-self: center;
+  }
+  #light-box-main-image {
+    position: absolute;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    display: none;
+  }
+
+  #light-box-main-image.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #light-box-main-image img {
+    width: 80%;
   }
 }
